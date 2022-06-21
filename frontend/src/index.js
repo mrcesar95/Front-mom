@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM  from "react-dom";
-import AppBar from "./componets/AppBar";
+import * as ReactDOMClient  from "react-dom/client";
+import AppNav from "./componets/AppNav";
 
 
-const container = document.getElementById("root")
+const rootElement = document.getElementById("root")
 
-ReactDOM.render(<AppBar/>, container)
+const root = ReactDOMClient.createRoot(rootElement);root.render(<AppNav/>)
