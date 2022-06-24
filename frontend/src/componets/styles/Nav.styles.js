@@ -8,7 +8,7 @@ export default makeStyles({
     boton1: {
         position: 'relative',
         left: '62%',
-        top: '-100px'
+        top: '-100px',
 },
     boton2: {
         position: 'relative',
