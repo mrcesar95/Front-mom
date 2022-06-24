@@ -7,12 +7,18 @@ import Button from '@material-ui/core/Button';
 import styles from './styles/App.styles'
 import Frutero from '../images/frutero.png'
 import Fique from '../images/fique.png'
-
+import { Route } from "react-router-dom"
+import AboutUs from "./AboutUs"
 
 function App() {
     const clases = styles();
     return (
         <div>
+            {/* <Route path="/AboutUs">
+                <AboutUs />
+            </Route> */}
+
+
             <AppNav></AppNav>
             <section className="contend">
                 <img src={Tijano} className="tijano"></img>
@@ -24,8 +30,8 @@ function App() {
                 Become an affiliate
             </Button>
             <h2 className="subtitulo">Recent Products</h2>
-            <img src={Frutero} className="frutero"/>
-            <img src={Fique} className="fique"/>
+            <img src={Frutero} className="frutero" />
+            <img src={Fique} className="fique" />
         </div>
     )
 }
