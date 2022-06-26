@@ -5,25 +5,21 @@ import User from "../images/user.png"
 import Button from '@material-ui/core/Button';
 import "../styles/AppNav.css"
 import styles from "./styles/Nav.styles.js"
-
+import { Link } from "react-router-dom";
 
 function AppNav() {
     const clases = styles();
     return (
         <div>
             <AppBar position="fixed" className={clases.Nav}>
-                <img src={Logo} className="logo" />
-                <img src={User} className="User" />
+                <Link to="/Api"><img src={Logo} className="logo" /></Link>
+                <Link to="/Login"><img src={User} className="User" /></Link>
                 <Toolbar>
                     <div className={clases.boton1}>
-                        <Button >
-                            About us
-                        </Button>
+                        <Link to="/AboutUs"><Button>About us</Button></Link>
                     </div>
                     <div className={clases.boton2}>
-                        <Button >
-                            Foundations
-                        </Button>
+                        <Link to="/Foundations"><Button>Foundations</Button></Link>
                     </div>
                 </Toolbar>
             </AppBar>
