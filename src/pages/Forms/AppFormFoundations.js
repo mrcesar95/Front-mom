@@ -1,7 +1,8 @@
+//Form User = Foundations//
 import React, { useState, useEffect } from 'react'
 import noteService from './services/notes'
 
-const App = () => {
+const AppFormFoundations = () => {
   const [notes, setNotes] = useState([]) 
   const [newNote, setNewNote] = useState('')
 
@@ -82,4 +83,4 @@ const App = () => {
     </div>
   )
 }
-export default App 
+export default AppFormFoundations 
