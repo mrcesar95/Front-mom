@@ -8,6 +8,7 @@ import styles from "./styles/Foundations.styles"
 import Base from "../images/base.gif"
 import Porta from "../images/porta.gif"
 import Lapiz from "../images/Portalapiz.gif"
+import Footer from "../componets/Footer";
 
 
 function Foundations() {
@@ -30,6 +31,7 @@ function Foundations() {
             <img src={Base} className="base" />
             <img src={Porta} className="porta"/>
             <img src={Lapiz} className="lapiz"/>
+            <Footer></Footer>
         </div>
     )
 }

@@ -14,22 +14,18 @@ function Api() {
         <div>
             <AppNav></AppNav>
             <section className="contend">
-                <img src={Tijano} className="tijano"></img>
+                <img src={Tijano}  className="tijano" />
             </section>
             <div>
                 <h1 className="titulo">Colombian art, created <br></br>by mothers who are<br></br>heads of households</h1>
             </div>
-            <Link to="/LoginVendor">
+            <Link to="/Vendor">
             <Button variant="contained" color="primary" disableElevation className={clases.BTN}>
                 Become an affiliate
             </Button>
             </Link>
             <h2 className="subtitulo">Recent Products</h2>
-            {/* <img src={Frutero} className="frutero" />
-            <img src={Fique} className="fique" /> */}
-
             <Slider></Slider>
-
             <Footer></Footer>
         </div>
     )

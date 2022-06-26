@@ -4,6 +4,7 @@ import Back from "../images/backend.jpeg"
 import Front from "../images/frontend.jpeg"
 import Full from "../images/fullstack.png"
 import "../styles/AboutUs.css"
+import Footer from "../componets/Footer";
 
 function About() {
     return (
@@ -30,6 +31,7 @@ function About() {
             mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit
             iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut.
             </p>
+            <Footer></Footer>
             </div>
     )
 }

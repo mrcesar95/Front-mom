@@ -1,5 +1,6 @@
 import React from "react";
 import AppNav from "../componets/AppNav";
+import Footer from "../componets/Footer";
 
 function Product() {
     return(
@@ -7,6 +8,8 @@ function Product() {
             <AppNav>
 
             </AppNav>
+            <Footer>
+            </Footer>
         </div>
     )
 }
