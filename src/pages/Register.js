@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Note from './components/Note'
-import Notification from './components/Notification'
+import Note from '../componets/Note'
+import Notification from '../componets/Notification'
 import noteService from './services/notes'
 
 const AppRegister = () => {
