@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Note from '../componets/Note'
 import Notification from '../componets/Notification'
 import noteService from './services/notes'
+import "../styles/Register.css"
+
 
 const Register = () => {
   const [notes, setNotes] = useState([])
@@ -108,14 +110,9 @@ const Register = () => {
     : notes.filter(note => note.vendor)
 
   return (
-    <div>
-      <h1>Notes</h1>
-      <Notification message={errorMessage} />
-      <div>
-        <button onClick={() => setShowAll(!showAll)}>
-          show {showAll ? 'vendor' : 'all' }
-        </button>
-      </div>      
+    <div className='container'>
+      <h1 className='note'>Notes</h1>
+      <Notification message={errorMessage} />     
       <ul>
         {notesToShow.map((note, i) => 
           <Note
@@ -125,7 +122,7 @@ const Register = () => {
           />
         )}
       </ul>
-      <form onSubmit={addNote}>
+      <form onSubmit={addNote} className="formulario">
         <br/>
         <input type="text" id="firstName" placeholder="First name"
           value={firstName}
@@ -162,7 +159,7 @@ const Register = () => {
           onChange={handlePassword}
         />
         <br/>
-        <button type="submit">Create account</button>
+        <button type="submit" className='BTN2'>Create account</button>
       </form>   
     </div>
   )
