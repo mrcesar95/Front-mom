@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import LogoV from "../images/logo.png"
 
 import noteService from './services/notes'
-//import "../styles/Vendor.css"
-
+import "../styles/Vendor.css"
 /*const Note = ({note}) => {
   return (
     <li className='note'>
@@ -62,7 +62,7 @@ const AppRegister = () => {
       date: new Date().toISOString(),
       vendor: Math.random() > 0.5,
       id: notes.length + 1,
-    }  
+    }
     noteService
       .create(newObject)
       .then(returnedNote => {
@@ -127,72 +127,56 @@ const AppRegister = () => {
   const handlePassword = (event) => {
     setPassword(event.target.value)
   }
-
-
-  /*const notesToShow = showAll
-    ? notes
-    : notes.filter(note => note.vendor)
-  */
- 
   return (
-    <div>
-      <h1>Register Foundations</h1>
-      {/* <Notification message={errorMessage} /> */}
-      {/* <div>
-        <button onClick={() => setShowAll(!showAll)}>
-          show {showAll ? 'vendor' : 'all' }
-        </button>
-      </div>       */}
-      {/* <ul>
-        {notesToShow.map((note, i) => 
-          <Note
-            key={i}
-            note={note} 
-            toggleProfile={() => toggleProfileOf(note.id)}
+    <div className='pre'>
+      <img src={LogoV} className='logov' />
+      <h1 className='title'>Register Foundations</h1>
+      <form onSubmit={addNote} className="formu">
+        <div className='container'>
+          <label htmlfor="firstname">First Name</label>
+          <input type="text" id="firstName"
+            value={firstName}
+            onChange={handleFirstName}
           />
-        )}
-      </ul> */}
-      <form onSubmit={addNote}>
-        <br/>
-        <input type="text" id="firstName" placeholder="First name"
-          value={firstName}
-          onChange={handleFirstName}
-        />
-        <br/>
-        <input type="text" id="lastName" placeholder="Last name"
-          value={lastName}
-          onChange={handleLastName}
-        />
-        <br/>
-        <input type="email" id="email" placeholder="Email"
-          value={email}
-          onChange={handleEmail}
-        />
-        <br/>
-        <input type="text" id="username" placeholder="Username"
-          value={username}
-          onChange={handleUsername}
-        />
-        <br/>
-        <input type="text" id="foundation" placeholder="Organization"
-          value={foundation}
-          onChange={handleFoundation}
-        />
-        <br/>
-        <input type="text" id="phoneNumber" placeholder="Phone Number"
-          value={phoneNumber}
-          onChange={handlePhoneNumber}
-        />
-        <br/>
-        <input type="password" id="password" placeholder="Password"
-          value={password}
-          onChange={handlePassword}
-        />
-        <br/>
-        <button type="submit">Create account</button>
-      </form>   
+          <br />
+          <label htmlfor="lastName">Last Name</label>
+          <input type="text" id="lastName"
+            value={lastName}
+            onChange={handleLastName}
+          />
+          <br />
+          <label htmlfor="email">Email</label>
+          <input type="email" id="email"
+            value={email}
+            onChange={handleEmail}
+          />
+          <br />
+          <label htmlfor="username">UserName</label>
+          <input type="text" id="username"
+            value={username}
+            onChange={handleUsername}
+          />
+          <br />
+          <label htmlfor="foundation">Foundation</label>
+          <input type="text" id="foundation"
+            value={foundation}
+            onChange={handleFoundation}
+          />
+          <br />
+          <label htmlfor="phoneNumber">Phone Number</label>
+          <input type="text" id="phoneNumber"
+            value={phoneNumber}
+            onChange={handlePhoneNumber}
+          />
+          <br />
+          <label htmlfor="password">Password</label>
+          <input type="password" id="password"
+            value={password}
+            onChange={handlePassword}/>
+            <button>Sign In</button>
+        </div>
+      </form>
     </div>
   )
 }
-
 export default AppRegister 
