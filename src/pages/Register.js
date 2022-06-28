@@ -1,11 +1,36 @@
 import React, { useState, useEffect } from 'react'
-import Note from '../componets/Note'
-import Notification from '../componets/Notification'
 import noteService from './services/notes'
 import "../styles/Register.css"
+import noteService from './services/notes'
 
 
-const Register = () => {
+const Note = ({note}) => {
+  return (
+    <li className='note'>
+      firstName: {note.firstName}
+      lastName: {note.lastName}
+      email: {note.email}
+      organization: {note.foundation}
+      phoneNumber: {note.username}
+      password: {note.password}
+      id: {note.id}
+    </li>
+  )
+}
+
+const Notification = ({ message }) => {
+  if (message === null) {
+    return null
+  }
+
+  return (
+    <div className="error">
+      {message}
+    </div>
+  )
+}
+
+const AppRegister = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -14,7 +39,7 @@ const Register = () => {
   const [foundation, setFoundation] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
   const [password, setPassword] = useState('')
-  const [showAll, setShowAll] = useState(true)
+  //const [showAll, setShowAll] = useState(true)
   const [errorMessage, setErrorMessage] = useState(null)
 
   useEffect(() => {
@@ -105,15 +130,21 @@ const Register = () => {
   }
 
 
-  const notesToShow = showAll
+  /*const notesToShow = showAll
     ? notes
     : notes.filter(note => note.vendor)
-
+  */
+ 
   return (
-    <div className='container'>
-      <h1 className='note'>Notes</h1>
-      <Notification message={errorMessage} />     
-      <ul>
+    <div>
+      <h1>Notes</h1>
+      <Notification message={errorMessage} />
+      {/* <div>
+        <button onClick={() => setShowAll(!showAll)}>
+          show {showAll ? 'vendor' : 'all' }
+        </button>
+      </div>       */}
+      {/* <ul>
         {notesToShow.map((note, i) => 
           <Note
             key={i}
@@ -121,8 +152,8 @@ const Register = () => {
             toggleProfile={() => toggleProfileOf(note.id)}
           />
         )}
-      </ul>
-      <form onSubmit={addNote} className="formulario">
+      </ul> */}
+      <form onSubmit={addNote}>
         <br/>
         <input type="text" id="firstName" placeholder="First name"
           value={firstName}
@@ -159,7 +190,7 @@ const Register = () => {
           onChange={handlePassword}
         />
         <br/>
-        <button type="submit" className='BTN2'>Create account</button>
+        <button type="submit">Create account</button>
       </form>   
     </div>
   )

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-//import Note from '../components/Note'
-//import Notification from '../components/Notification'
+
 import noteService from './services/notes'
+import "../styles/Vendor.css"
 
 
 const Note = ({note}) => {
@@ -30,7 +30,7 @@ const Notification = ({ message }) => {
   )
 }
 
-const AppFormFoundations = () => {
+const AppRegister = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -39,7 +39,7 @@ const AppFormFoundations = () => {
   const [foundation, setFoundation] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
   const [password, setPassword] = useState('')
-  const [showAll, setShowAll] = useState(true)
+  //const [showAll, setShowAll] = useState(true)
   const [errorMessage, setErrorMessage] = useState(null)
 
   useEffect(() => {
@@ -130,20 +130,21 @@ const AppFormFoundations = () => {
   }
 
 
-  const notesToShow = showAll
+  /*const notesToShow = showAll
     ? notes
     : notes.filter(note => note.vendor)
-
+  */
+ 
   return (
     <div>
-      <h1>Register</h1>
+      <h1>Notes</h1>
       <Notification message={errorMessage} />
-      <div>
+      {/* <div>
         <button onClick={() => setShowAll(!showAll)}>
           show {showAll ? 'vendor' : 'all' }
         </button>
-      </div>      
-      <ul>
+      </div>       */}
+      {/* <ul>
         {notesToShow.map((note, i) => 
           <Note
             key={i}
@@ -151,7 +152,7 @@ const AppFormFoundations = () => {
             toggleProfile={() => toggleProfileOf(note.id)}
           />
         )}
-      </ul>
+      </ul> */}
       <form onSubmit={addNote}>
         <br/>
         <input type="text" id="firstName" placeholder="First name"
@@ -184,7 +185,7 @@ const AppFormFoundations = () => {
           onChange={handlePhoneNumber}
         />
         <br/>
-        <input type="password" id="password" placeholder="Password"
+        <input type="text" id="password" placeholder="Password"
           value={password}
           onChange={handlePassword}
         />
@@ -194,4 +195,5 @@ const AppFormFoundations = () => {
     </div>
   )
 }
+
 export default AppFormFoundations 
