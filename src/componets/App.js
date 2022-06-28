@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/api" exact element={<Api/>}></Route>
+                <Route path="/" exact element={<Api/>}></Route>
             </Routes>
             <Routes>    
                 <Route path="/foundations" exact element={<Foundations/>}></Route>

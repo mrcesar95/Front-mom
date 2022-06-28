@@ -12,7 +12,7 @@ function AppNav() {
     return (
         <div>
             <AppBar position="fixed" className={clases.Nav}>
-                <Link to="/Api"><img src={Logo} className="logo" /></Link>
+                <Link to="/"><img src={Logo} className="logo" /></Link>
                 <Link to="/Login"><img src={User} className="User" /></Link>
                 <Toolbar>
                     <div className={clases.boton1}>

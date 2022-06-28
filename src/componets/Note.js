@@ -13,5 +13,4 @@ const Note = ({note}) => {
     </li>
   )
 }
-
 export default Note
