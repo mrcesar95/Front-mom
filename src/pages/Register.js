@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import noteService from './services/notes'
-import "../styles/Register.css"
-import noteService from './services/notes'
+//import "../styles/Register.css"
 
 
-const Note = ({note}) => {
+/*const Note = ({note}) => {
   return (
     <li className='note'>
       firstName: {note.firstName}
@@ -16,9 +15,9 @@ const Note = ({note}) => {
       id: {note.id}
     </li>
   )
-}
+}*/
 
-const Notification = ({ message }) => {
+/*const Notification = ({ message }) => {
   if (message === null) {
     return null
   }
@@ -28,9 +27,9 @@ const Notification = ({ message }) => {
       {message}
     </div>
   )
-}
+}*/
 
-const AppRegister = () => {
+const Register = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -40,7 +39,7 @@ const AppRegister = () => {
   const [phoneNumber, setPhoneNumber] = useState('')
   const [password, setPassword] = useState('')
   //const [showAll, setShowAll] = useState(true)
-  const [errorMessage, setErrorMessage] = useState(null)
+  /*const [errorMessage, setErrorMessage] = useState(null)*/
 
   useEffect(() => {
     noteService
@@ -78,7 +77,7 @@ const AppRegister = () => {
       })
   }
 
-  const toggleProfileOf = (id) => {
+  /*const toggleProfileOf = (id) => {
     const note = notes.find(n => n.id === id)
     const changedNote = { ...note, vendor: !note.vendor }
   
@@ -95,7 +94,7 @@ const AppRegister = () => {
           setErrorMessage(null)
         }, 5000)   
       })
-  }
+  }*/
 
   /*const handleNoteChange = (event) => {
     setNewNote(event.target.value)
@@ -137,8 +136,8 @@ const AppRegister = () => {
  
   return (
     <div>
-      <h1>Notes</h1>
-      <Notification message={errorMessage} />
+      <h1>Register</h1>
+      {/* <Notification message={errorMessage} /> */}
       {/* <div>
         <button onClick={() => setShowAll(!showAll)}>
           show {showAll ? 'vendor' : 'all' }
@@ -165,7 +164,7 @@ const AppRegister = () => {
           onChange={handleLastName}
         />
         <br/>
-        <input type="text" id="email" placeholder="Email"
+        <input type="email" id="email" placeholder="Email"
           value={email}
           onChange={handleEmail}
         />
@@ -185,7 +184,7 @@ const AppRegister = () => {
           onChange={handlePhoneNumber}
         />
         <br/>
-        <input type="text" id="password" placeholder="Password"
+        <input type="password" id="password" placeholder="Password"
           value={password}
           onChange={handlePassword}
         />
@@ -195,5 +194,4 @@ const AppRegister = () => {
     </div>
   )
 }
-
 export default Register
