@@ -67,7 +67,7 @@ const Login = () => {
         Need an Account?<br/>
         <span className="line">
           {/*put router link here*/}
-          <a href="https://web.whatsapp.com/">Sign Up</a>
+          <a href="http://localhost:3000/Vendor">Sign Up</a>
         </span>
       </p>
     </section>
