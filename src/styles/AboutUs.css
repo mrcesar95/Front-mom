@@ -1,59 +1,52 @@
-.edisson{
+.Edisson{
     height: 215px;
     position: relative;
     left: 15%;
     border-radius: 20px;
 }
-.cesar{
+.Cesar{
     height: 215px;
     position: relative;
     left: 30%;
     margin-top: 9%;
     border-radius: 20px;
 }
-.joana{
+.Joana{
     height: 215px;
     position: relative;
     left: 45%;
     border-radius: 20px;
 }
-.name1{
+.Name1{
     position: relative;
     left: 16%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.name2{
+.Name2{
     position: relative;
     left: 44.5%;
     margin-top: -6%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.name3{
+.Name3{
     position: relative;
     left: 73%;
     margin-top: -6%;    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.text1{
+.Text1{
     position: relative;
     left: 16%;
 }
-.text2{
+.Text2{
     position: relative;
     left: 44%;
+    margin-top: 73px;
 }
-.text3{
+.Text3{
     position: relative;
     left: 73%;
-}
-.subti{
-    position: relative;
-    text-align: center;
-    margin-top: 9%;
-}
-.parrafo{
-    position: relative;
-    text-align: justify;
+    margin-top: 70px;
 }

@@ -12,14 +12,22 @@ function AppNav() {
     return (
         <div>
             <AppBar position="fixed" className={clases.Nav}>
-                <Link to="/"><img src={Logo} className="logo" /></Link>
-                <Link to="/Login"><img src={User} className="User" /></Link>
+                <Link to="/">
+                    <img src={Logo} className="logo" />
+                </Link>
+                <Link to="/Login">
+                    <img src={User} className="User" />
+                </Link>
                 <Toolbar>
                     <div className={clases.boton1}>
-                        <Link to="/AboutUs"><Button>About us</Button></Link>
+                        <Link to="/AboutUs" style={{ textDecoration: 'none' }}>
+                            <Button>About us</Button>
+                        </Link>
                     </div>
                     <div className={clases.boton2}>
-                        <Link to="/Foundations"><Button>Foundations</Button></Link>
+                        <Link to="/Foundations" style={{ textDecoration: 'none' }}>
+                            <Button>Foundations</Button>
+                        </Link>
                     </div>
                 </Toolbar>
             </AppBar>
