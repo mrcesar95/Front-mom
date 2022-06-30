@@ -2,11 +2,18 @@ import axios from 'axios'
 import { baseUrl } from './constants'
 
 
-const url = `${baseUrl}/notes`;
+const url = `${baseUrl}/users`;
 
-const getAll = () => {
+const getUser = () => {
   const request = axios.get(url)
   return request.then(response => response.data)
+}
+
+export const login = ({ password, user }) => {
+  const request = axios.get(url)
+  return request.then(response => response.data)
+    .then(users => users.filter(({ password: passwordBack, name }) => passwordBack === password && name === user))
+    .then(users => users?.length > 0)
 }
 
 const create = newObject => {
@@ -20,4 +27,5 @@ const update = (id, newObject) => {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { getAll, create, update }
+export default { getUser, create, update };
+
