@@ -1,35 +1,35 @@
 import React from "react"
-import { Route, Routes } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Api from "../pages/Api"
 import Foundations from "../pages/Foundations"
 import AboutUs from "../pages/AboutUs";
 import Product from "../pages/Product";
 import Register from "../pages/Register"
 import Vendor from "../pages/Vendor"
+import { Login } from "../pages/Login copy";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { storageKeys } from "../hooks/useLocalStorage.enum";
 
 function App() {
-    return (
-        <div className="App">
-            <Routes>
-                <Route path="/" exact element={<Api/>}></Route>
-            </Routes>
-            <Routes>    
-                <Route path="/foundations" exact element={<Foundations/>}></Route>
-            </Routes>
-            <Routes>
-                <Route path="/aboutus" exact element={<AboutUs/>}></Route>
-            </Routes>
-            <Routes>
-                <Route path="/product" exact element={<Product/>}> </Route>
-            </Routes>
-            <Routes>
-                <Route path="/register" exact element={<Register/>}></Route>
-            </Routes>
-            <Routes>
-                <Route path="/vendor" exact element={<Vendor/>}></Route>
-            </Routes>
+    const [isAuthenticated] = useLocalStorage(storageKeys.autorized.description, false);
 
-        </div>
-    )
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    {!isAuthenticated && (
+                        <Route path="/login-function" exact element={<Login />} />
+                    )}
+                    <Route path="/" exact element={<Api />} />
+                    <Route path="/foundations" exact element={<Foundations />} />
+                    <Route path="/aboutus" exact element={<AboutUs />} />
+                    <Route path="/product" exact element={<Product />} />
+                    <Route path="/register" exact element={<Register />} />
+                    <Route path="/vendor" exact element={<Vendor />} />
+                </Routes>
+            </div>
+        </Router>
+    );
 }
-export default App
+
+export default App;
