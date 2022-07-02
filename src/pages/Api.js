@@ -20,7 +20,7 @@ function Api() {
                 <h1 className="titulo">Colombian art, created <br></br>by mothers who are<br></br>heads of households</h1>
             </div>
             <Link to="/Vendor" style={{ textDecoration: 'none' }}>
-                <Button variant="contained" disableElevation className={clases.BTN}>
+                <Button variant="contained" color="inherit" disableElevation className={clases.BTN}>
                     Become an affiliate
                 </Button>
             </Link>

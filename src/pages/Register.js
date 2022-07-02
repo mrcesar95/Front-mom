@@ -3,32 +3,6 @@ import LogoV from "../images/logo.png"
 
 import noteService from './services/notes'
 import "../styles/Vendor.css"
-/*const Note = ({note}) => {
-  return (
-    <li className='note'>
-      firstName: {note.firstName}
-      lastName: {note.lastName}
-      email: {note.email}
-      organization: {note.foundation}
-      phoneNumber: {note.username}
-      password: {note.password}
-      id: {note.id}
-    </li>
-  )
-}*/
-
-/*const Notification = ({ message }) => {
-  if (message === null) {
-    return null
-  }
-
-  return (
-    <div className="error">
-      {message}
-    </div>
-  )
-}*/
-
 const AppRegister = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
@@ -166,8 +140,8 @@ const AppRegister = () => {
           <label htmlfor="password">Password</label>
           <input type="password" id="password"
             value={password}
-            onChange={handlePassword}/>
-            <button type='submit'>Create Acount</button>
+            onChange={handlePassword} />
+          <button type='submit'>Create Acount</button>
         </div>
       </form>
     </div>

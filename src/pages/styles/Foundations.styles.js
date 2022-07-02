@@ -4,9 +4,9 @@ export default makeStyles({
          BTN: {
             backgroundColor: 'green',
             color: 'white',
-            position: "relative",
+            position: "absolute",
             left: '14%',
             borderRadius: '20px',
-            marginTop: '13px'
+            marginTop: '30px'
          }
 });

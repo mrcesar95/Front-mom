@@ -16,12 +16,17 @@ function About() {
                 <img src={Full} className="Joana" />
             </div>
             <h3 className="Name1">Edisson Osorio</h3>
-               <p className="Text1">Front-End developer</p>
+            <p className="Text1">Front-End developer</p>
             <h3 className="Name2">Cesar Molina</h3>
-               <p className="Text2">Back-End developer</p>
+            <p className="Text2">Back-End developer</p>
             <h3 className="Name3">Joana Casallas</h3>
-                <p className="Text3">Full-Stack developer</p>
+            <p className="Text3">Full-Stack developer</p>
+            <div>
+                <Footer className="Foot">
+
+                </Footer>
             </div>
+        </div>
     )
 }
 export default About

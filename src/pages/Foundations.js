@@ -9,6 +9,7 @@ import Base from "../images/base.gif"
 import Porta from "../images/porta.gif"
 import Lapiz from "../images/Portalapiz.gif"
 import Footer from "../componets/Footer";
+import ReactPlayer from "react-player";
 
 
 function Foundations() {
@@ -23,15 +24,28 @@ function Foundations() {
                 <h1 className="titulo">Proyecta Studio<br></br>Design SAS</h1>
                 <p className="parrafo">We design and innovate with furniture<br></br>and accessories</p>
             </div>
-            <Button variant="contained"  disableElevation className={clases.BTN}>
-                WhatsApp
-            </Button>
+            <a href="https://api.whatsapp.com/send?phone=3045958532">
+                <Button variant="contained" disableElevation className={clases.BTN}>
+                    WhatsApp
+                </Button></a>
             <hr className="linea" />
             <h2 className="sub">GET INSPIRED WITH OUR PRODUCTS</h2>
             <img src={Base} className="base" />
-            <img src={Porta} className="porta"/>
-            <img src={Lapiz} className="lapiz"/>
-            <Footer></Footer>
+            <img src={Porta} className="porta" />
+            <img src={Lapiz} className="lapiz" />
+
+            <div className="Video">
+                <ReactPlayer
+                    url={require("../videos/video.mp4")}
+                    controls
+                    playing
+                    volume="0.8"
+                    loop
+                />
+            </div>
+            <div className="fo">
+                <Footer></Footer>
+            </div>
         </div>
     )
 }
