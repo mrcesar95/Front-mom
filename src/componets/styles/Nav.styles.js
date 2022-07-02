@@ -6,13 +6,13 @@ export default makeStyles({
         height: '95px'
     },
     boton1: {
-        position: 'relative',
-        left: '62%',
-        top: '-100px',
+        position: 'absolute',
+        left: '65%',
+        top: '35px',
 },
     boton2: {
-        position: 'relative',
-        left: '68%',
-        top: '-100px'
+        position: 'absolute',
+        left: '75%',
+        top: '35px'
     }
 });

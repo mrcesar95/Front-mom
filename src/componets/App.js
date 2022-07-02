@@ -6,7 +6,7 @@ import AboutUs from "../pages/AboutUs";
 import Product from "../pages/Product";
 import Register from "../pages/Register"
 import Vendor from "../pages/Vendor"
-import { Login } from "../pages/Login copy";
+import { Login } from "../pages/Login";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { storageKeys } from "../hooks/useLocalStorage.enum";
 
