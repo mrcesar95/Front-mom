@@ -22,9 +22,7 @@ function About() {
             <h3 className="Name3">Joana Casallas</h3>
             <p className="Text3">Full-Stack developer</p>
             <div>
-                <Footer className="Foot">
-
-                </Footer>
+                <Footer></Footer>
             </div>
         </div>
     )

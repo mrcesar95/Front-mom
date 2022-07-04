@@ -69,11 +69,13 @@ export const Login = () => {
       {isAuthenticated ? (
         <Navigate replace={true} to="/" />
       ) : (
-        <section>
+
+        <div className="DIV">
+        <section className="Sec">
           <p className={classStateHandler} aria-live="assertive">
             {messageError}</p>
           <h1>Sign In</h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="Fo">
             <label htmlFor="username">Username:</label>
             <input
               focus="true"
@@ -104,6 +106,7 @@ export const Login = () => {
             </span>
           </p>
         </section>
+        </div>
       )}
     </>
   )
