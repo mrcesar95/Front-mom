@@ -18,7 +18,7 @@
     border-radius: 20px;
 }
 .Name1{
-    position: relative;
+    position: absolute;
     left: 16%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 2px;
@@ -27,30 +27,33 @@
 .Name2{
     position: absolute;
     left: 44.5%;
-    margin-top: -45px;
+    margin-top: 2px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 .Name3{
     position: absolute;
     left: 73%;
-    margin-top: -45px;    
+    margin-top: 2px;    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .Text1{
-    position: relative;
+    position: absolute;
     left: 15.5%;
+    margin-top: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .Text2{
     position: absolute;
     left: 44%;
-    margin-top: -20px;
+    margin-top: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .Text3{
     position: absolute;
     left: 73%;
-    margin-top: -20px;
+    margin-top: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.FOO{
+    margin-top: 160px;
 }

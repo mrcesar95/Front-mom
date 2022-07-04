@@ -7,6 +7,6 @@ export default makeStyles({
             position: "absolute",
             left: '14%',
             borderRadius: '20px',
-            marginTop: '30px'
+            marginTop: '70px'
          }
 });
