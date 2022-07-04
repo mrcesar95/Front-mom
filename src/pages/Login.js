@@ -102,7 +102,7 @@ export const Login = () => {
             Need an Account?<br />
             <span className="line">
               {/*put router link here*/}
-              <a href="http://localhost:3000/Vendor">Sign Up</a>
+              <a href="http://localhost:3000/Register">Sign Up</a>
             </span>
           </p>
         </section>
@@ -179,7 +179,7 @@ const Logssin = () => {
             Need an Account?<br />
             <span className="line">
               {/*put router link here*/}
-              <a href="http://localhost:3000/Vendor">Sign Up</a>
+              <a href="http://localhost:3000/register">Sign Up</a>
             </span>
           </p>
         </section>

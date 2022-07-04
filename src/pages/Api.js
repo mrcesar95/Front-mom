@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import styles from './styles/App.styles'
 import Slider from "../componets/Slider";
 import { Link } from "react-router-dom";
+import { Login } from "./Login";
 
 function Api() {
     const clases = styles();
@@ -27,6 +28,7 @@ function Api() {
             <h2 className="subtitulo">Recent Products</h2>
             <Slider></Slider>
             <Footer></Footer>
+
         </div>
     )
 }
