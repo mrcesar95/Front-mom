@@ -1,6 +1,6 @@
 import React from "react";
-import images from "../exports/ImageSli";
-import "../styles/Slider.css"
+import images from "../exports/Images";
+import "../styles/SliderFoundations.css"
 import { motion } from "framer-motion";
 
 const Slider = () => {

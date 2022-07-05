@@ -5,11 +5,8 @@ import Cubo from "../images/cubito.gif"
 import Cristal from "../images/cubitoCristal.gif"
 import Button from '@material-ui/core/Button';
 import styles from "./styles/Foundations.styles"
-import Base from "../images/base.gif"
-import Porta from "../images/porta.gif"
-import Lapiz from "../images/Portalapiz.gif"
 import Footer from "../componets/Footer";
-import Slider from "../componets/Slider";
+import Slider from "../componets/SliderFoundations";
 import ReactPlayer from "react-player";
 
 
