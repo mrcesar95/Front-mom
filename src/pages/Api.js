@@ -7,7 +7,6 @@ import Button from '@material-ui/core/Button';
 import styles from './styles/App.styles'
 import Slider from "../componets/Slider";
 import { Link } from "react-router-dom";
-import { Login } from "./Login";
 
 function Api() {
     const clases = styles();
