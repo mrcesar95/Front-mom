@@ -14,8 +14,8 @@
     padding: 2rem;
 }
 .item img{
-    height: 85%;
-    width: 120%;
+    height: 90%;
+    width: 100%;
     pointer-events: none;
     border-radius: 40px;
 }
