@@ -9,6 +9,7 @@ import Base from "../images/base.gif"
 import Porta from "../images/porta.gif"
 import Lapiz from "../images/Portalapiz.gif"
 import Footer from "../componets/Footer";
+import Slider from "../componets/Slider";
 import ReactPlayer from "react-player";
 
 
@@ -30,9 +31,9 @@ function Foundations() {
                 </Button></a>
             <hr className="linea" />
             <h2 className="sub">GET INSPIRED WITH OUR PRODUCTS</h2>
-            <img src={Base} className="base" />
-            <img src={Porta} className="porta" />
-            <img src={Lapiz} className="lapiz" />
+            <div className="Slider">
+            <Slider></Slider>
+            </div>
 
             <div className="Video">
                 <ReactPlayer

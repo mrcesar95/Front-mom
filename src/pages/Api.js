@@ -5,7 +5,6 @@ import "../styles/index.css"
 import Tijano from "../images/tijano.png"
 import Button from '@material-ui/core/Button';
 import styles from './styles/App.styles'
-import Slider from "../componets/Slider";
 import { Link } from "react-router-dom";
 
 function Api() {
@@ -25,7 +24,6 @@ function Api() {
                 </Button>
             </Link>
             <h2 className="subtitulo">Recent Products</h2>
-            <Slider></Slider>
             <Footer></Footer>
 
         </div>

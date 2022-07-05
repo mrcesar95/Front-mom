@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import LogoV from "../images/logo.png"
-
 import noteService from './services/notes'
 import "../styles/Vendor.css"
+
 const AppRegister = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
