@@ -34,9 +34,15 @@ function Foundations() {
             <img src={Fle3} className="Fle3"></img>
             <img src={Fle4} className="Fle4"></img>
             <div className="Slider">
-            <Slider></Slider>
+                <Slider></Slider>
             </div>
-
+            <hr className="linea2" />
+            <div className="OUT">
+                <h2>Know more about us</h2>
+            </div>
+            <div className="PARR">
+                <p>Watch this video to learn more about our organization</p>
+            </div>
             <div className="Video">
                 <ReactPlayer
                     url={require("../videos/video.mp4")}
