@@ -90,10 +90,6 @@ const AppRegister = () => {
     setUsername(event.target.value)
   }
 
-  const handleFoundation = (event) => {
-    setFoundation(event.target.value)
-  }
-
   const handlePhoneNumber = (event) => {
     setPhoneNumber(event.target.value)
   }
@@ -103,7 +99,7 @@ const AppRegister = () => {
   }
   return (
     <div className='pre'>
-      <img src={LogoV} className='logov' />
+      <img alt="logo" src={LogoV}  className='logov' />
       <h1 className='title'>Register</h1>
       <form onSubmit={addNote} className="formu">
         <div className='container'>
