@@ -33,3 +33,22 @@
     position: relative;
     right: 35%;
 }
+.Fle{
+    position: absolute;
+    left: 88%;
+    height: 40px;
+    margin-top: 120px;
+}
+.Fle2{
+    position: absolute;
+    height: 40px;
+    left: 9%;
+    margin-top: 120px;
+    transform: rotate(-190deg);
+}
+.BA1{
+    margin-top: 2%;
+}
+.FO1{
+    margin-top: 25%;
+}

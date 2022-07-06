@@ -8,6 +8,8 @@ import styles from "./styles/Foundations.styles"
 import Footer from "../componets/Footer";
 import Slider from "../componets/SliderFoundations";
 import ReactPlayer from "react-player";
+import Fle3 from "../images/flecha.png"
+import Fle4 from "../images/flecha.png"
 
 
 function Foundations() {
@@ -28,6 +30,9 @@ function Foundations() {
                 </Button></a>
             <hr className="linea" />
             <h2 className="sub">GET INSPIRED WITH OUR PRODUCTS</h2>
+
+            <img src={Fle3} className="Fle3"></img>
+            <img src={Fle4} className="Fle4"></img>
             <div className="Slider">
             <Slider></Slider>
             </div>

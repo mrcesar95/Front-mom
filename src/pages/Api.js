@@ -8,7 +8,8 @@ import styles from './styles/App.styles'
 import { Link } from "react-router-dom";
 import Slider from "../componets/Slider";
 import Fle from "../images/flecha.png"
-
+import Fle2 from "../images/flecha.png"
+import Baner from "../componets/Baner"
 
 function Api() {
     const clases = styles();
@@ -27,9 +28,18 @@ function Api() {
                 </Button>
             </Link>
             <h2 className="subtitulo">Recent Products</h2>
-            <Slider></Slider>
-            <Footer></Footer>
+            <img src={Fle} className="Fle"></img>
+            <img src={Fle2} className="Fle2"></img>
 
+            <div>
+                <Slider></Slider>
+            </div>
+            <div className="BA1">
+                <Baner></Baner>
+            </div>
+            <div className="FO1">
+                <Footer></Footer>
+            </div>
         </div>
     )
 }

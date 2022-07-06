@@ -5,6 +5,7 @@ import Front from "../images/frontend.jpeg"
 import Full from "../images/fullstack.png"
 import "../styles/AboutUs.css"
 import Footer from "../componets/Footer";
+import Redes from "../componets/Redes";
 
 function About() {
     return (
@@ -22,11 +23,20 @@ function About() {
             <h3 className="Name3">Joana Casallas</h3>
             <p className="Text3">Full-Stack developer</p>
 
+            <div className="RED1">
+                <Redes></Redes>
+            </div>
+            <div className="RED2">
+                <Redes></Redes>
+            </div>
+            <div className="RED3">
+                <Redes></Redes>
+            </div>
+
             <div className="FOO">
             <Footer></Footer>
             </div>
         </div>
-
     )
 }
 export default About
