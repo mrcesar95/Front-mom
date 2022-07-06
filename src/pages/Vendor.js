@@ -60,7 +60,7 @@ const AppRegister = () => {
       phoneNumber: phoneNumber,
       password: password,
       date: new Date().toISOString(),
-      vendor: Math.random() > 0.5,
+      vendor: true,
       id: notes.length + 1,
     }
     noteService
@@ -129,7 +129,7 @@ const AppRegister = () => {
   }
   return (
     <div className='pre'>
-      <img src={LogoV} className='logov' />
+      <img src={LogoV} className='logov' alt="logo" />
       <h1 className='title'>Register Foundations</h1>
       <form onSubmit={addNote} className="formu">
         <div className='container'>
@@ -173,7 +173,7 @@ const AppRegister = () => {
           <input type="password" id="password"
             value={password}
             onChange={handlePassword}/>
-            <button>Sign In</button>
+            <button type="submit">Sign In</button>
         </div>
       </form>
     </div>
