@@ -19,7 +19,7 @@ function About() {
             <h3 className="Name1">Edisson Osorio</h3>
             <p className="Text1">Front-End developer</p>
             <h3 className="Name2">Cesar Molina</h3>
-            <p className="Text2">Back-End developer</p> 
+            <p className="Text2">Back-End developer</p>
             <h3 className="Name3">Joana Casallas</h3>
             <p className="Text3">Full-Stack developer</p>
 
@@ -33,8 +33,24 @@ function About() {
                 <Redes></Redes>
             </div>
 
+            <div>
+                <p className="text-front">I chose to be in charge of the frontend<br></br>
+                    because I like to have control of the user <br></br>experience.
+                    I love the design part and <br></br>making the application graphically.
+                </p>
+                <p className="text-back">
+                    I choose backend because is the<br></br> persistence of the aplicacion and<br></br>
+                    the core of the project
+                </p>
+                <p className="text-full">
+                    I choose the Full Stack Role because <br></br> 
+                    I think that when you know the complete <br></br> Sprocess of a product,
+                    you can get a global perspective of the solutions
+                </p>
+            </div>
+
             <div className="FOO">
-            <Footer></Footer>
+                <Footer></Footer>
             </div>
         </div>
     )

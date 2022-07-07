@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import LogoV from "../images/logo.png"
-
+import { Link } from 'react-router-dom'
 import noteService from './services/notes'
 import "../styles/Vendor.css"
 /*const Note = ({note}) => {
@@ -129,7 +129,7 @@ const AppRegister = () => {
   }
   return (
     <div className='pre'>
-      <img src={LogoV} className='logov' alt="logo" />
+      <Link to="/"><img src={LogoV} className='logov' alt="logo" /></Link>
       <h1 className='title'>Register Foundations</h1>
       <form onSubmit={addNote} className="formu">
         <div className='container'>

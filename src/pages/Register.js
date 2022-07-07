@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import LogoV from "../images/logo.png"
 import noteService from './services/notes'
 import "../styles/Vendor.css"
+import { Link } from 'react-router-dom'
 
 const AppRegister = () => {
   const [notes, setNotes] = useState([])
@@ -99,7 +100,7 @@ const AppRegister = () => {
   }
   return (
     <div className='pre'>
-      <img alt="logo" src={LogoV}  className='logov' />
+      <Link to="/"><img alt="logo" src={LogoV}  className='logov' /></Link>
       <h1 className='title'>Register</h1>
       <form onSubmit={addNote} className="formu">
         <div className='container'>
