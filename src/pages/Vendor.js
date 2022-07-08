@@ -3,6 +3,8 @@ import LogoV from "../images/logo.png"
 import { Link } from 'react-router-dom'
 import noteService from './services/notes'
 import "../styles/Vendor.css"
+import swal from 'sweetalert';
+import AppNav from '../componets/AppNav'
 /*const Note = ({note}) => {
   return (
     <li className='note'>
@@ -16,19 +18,16 @@ import "../styles/Vendor.css"
     </li>
   )
 }*/
-
 /*const Notification = ({ message }) => {
   if (message === null) {
     return null
   }
-
   return (
     <div className="error">
       {message}
     </div>
   )
 }*/
-
 const AppRegister = () => {
   const [notes, setNotes] = useState([])
   const [firstName, setFirstName] = useState('')
@@ -75,6 +74,7 @@ const AppRegister = () => {
         setPhoneNumber('')
         setPassword('')
       })
+      swal("Good job!", "We have received your information, we will contact you soon", "success");
   }
 
   /*const toggleProfileOf = (id) => {
@@ -129,8 +129,9 @@ const AppRegister = () => {
   }
   return (
     <div className='pre'>
-      <Link to="/"><img src={LogoV} className='logov' alt="logo" /></Link>
-      <h1 className='title'>Register Foundations</h1>
+      <AppNav></AppNav>
+      <h1 className='title'>Contact form</h1>
+      <p className='DESV'>Leave us your information and we will contact you soon</p>
       <form onSubmit={addNote} className="formu">
         <div className='container'>
           <label htmlfor="firstname">First Name</label>
