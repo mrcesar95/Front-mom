@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Front-mom/static/css/main.78f2db78.css",
+    "main.js": "/Front-mom/static/js/main.625a8f71.js",
+    "static/media/video.mp4": "/Front-mom/static/media/video.d3a78af475fd27a1ba30.mp4",
+    "static/media/Moms.jpg": "/Front-mom/static/media/Moms.2fe1f4f7da36243edc28.jpg",
+    "static/media/Mani.png": "/Front-mom/static/media/Mani.04282ec67933ef8fc5d0.png",
+    "static/media/tijano.png": "/Front-mom/static/media/tijano.fec20c8f247aff47b52d.png",
+    "static/media/Gua.png": "/Front-mom/static/media/Gua.1bea5ce4a3366a19b2e7.png",
+    "static/media/Fi.png": "/Front-mom/static/media/Fi.3b5029194ce8cd3199a1.png",
+    "static/media/botes.png": "/Front-mom/static/media/botes.1191a13fc24683cd2677.png",
+    "static/media/1.jpg": "/Front-mom/static/media/1.50ca4d10e4d1d91a1fb9.jpg",
+    "static/media/negro.gif": "/Front-mom/static/media/negro.31ab7206ce80ac52e006.gif",
+    "static/media/cubitoCristal.gif": "/Front-mom/static/media/cubitoCristal.76a9d77687f6acce3ee2.gif",
+    "static/media/cubito.gif": "/Front-mom/static/media/cubito.8ab9a17c6df8ffb33039.gif",
+    "static/media/shu.gif": "/Front-mom/static/media/shu.d8487fdc0a4bd6d22e47.gif",
+    "static/media/natu.gif": "/Front-mom/static/media/natu.11e4e8db2ff992e24356.gif",
+    "static/media/barro.gif": "/Front-mom/static/media/barro.d3461a9af6ab21ff0715.gif",
+    "static/media/solda.gif": "/Front-mom/static/media/solda.ae886b2f98a9cd85835c.gif",
+    "static/media/frontend.jpeg": "/Front-mom/static/media/frontend.cb1d9f5414787886e9b7.jpeg",
+    "static/media/backend.jpeg": "/Front-mom/static/media/backend.498a931ad8cf92273487.jpeg",
+    "static/media/fullstack.png": "/Front-mom/static/media/fullstack.3fba29a8858e7b0d5f5b.png",
+    "static/media/user.png": "/Front-mom/static/media/user.178d03ca67101f0d7a78.png",
+    "static/media/instagram.png": "/Front-mom/static/media/instagram.284534168e40d00067c6.png",
+    "index.html": "/Front-mom/index.html",
+    "main.78f2db78.css.map": "/Front-mom/static/css/main.78f2db78.css.map",
+    "main.625a8f71.js.map": "/Front-mom/static/js/main.625a8f71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78f2db78.css",
+    "static/js/main.625a8f71.js"
+  ]
+}
